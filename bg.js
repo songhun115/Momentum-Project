@@ -5,6 +5,7 @@ const img__number = 5;
 function paintImg(imgNumber) {
   const image = new Image();
   image.src = `imgs/${imgNumber + 1}.jpg`;
+  image.style.width = "100%";
   image.classList.add("bgImage");
   body.appendChild(image);
 }

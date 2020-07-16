@@ -15,6 +15,8 @@ function paintToDo(text) {
   const span = document.createElement("span");
   const newId = toDos.length + 1;
   delBtn.innerText = "❌";
+  delBtn.style.margin = "0px 10px";
+  delBtn.style.backgroundColor = "transparent";
   span.innerText = text;
   li.appendChild(delBtn);
   li.appendChild(span);
