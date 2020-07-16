@@ -1,0 +1,68 @@
+body,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+}
+h1 {
+  color: #34495e;
+}
+body {
+  color: #34495e;
+}
+.form,
+.greetings {
+  display: none;
+}
+.js-clock > h1 {
+  color: white;
+}
+.js-clock {
+  display: flex;
+  justify-content: center;
+}
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.js__toDoForm {
+  text-align: center;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.js__toDoList > li {
+  padding: 10px 0;
+  color: white;
+}
+.showing {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
