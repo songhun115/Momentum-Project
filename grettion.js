@@ -24,6 +24,7 @@ function paintGreeting(text) {
   form.classList.remove(showing_className);
   greeting.classList.add(showing_className);
   greeting.innerText = `hello ${text}`;
+  greeting.color = "#fafafa";
 }
 
 function loadName() {

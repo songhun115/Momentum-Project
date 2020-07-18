@@ -13,16 +13,20 @@ a {
 
 h1 {
   font-size: 60px;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 h4 {
   text-align: center;
   font-size: 2rem;
-  color: #333333;
+  margin: 0;
+  color: #1c1c1c;
 }
 
 body {
-  color: #34495e;
+  color: #1c1c1c;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -33,13 +37,20 @@ body {
 
 /* 시계 시작 */
 .js-clock > h1 {
-  color: #333333;
+  color: #1c1c1c;
 }
 
 .js-clock {
+  display: column;
+  justify-content: center;
+}
+
+.js-clock > h1,
+h2 {
   display: flex;
   justify-content: center;
 }
+
 /* 시계 끝 */
 
 /* 입력 폼 시작  */
@@ -52,20 +63,30 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+.js-form {
+  color: #1c1c1c;
+}
 .showing {
   display: block;
+}
+.js__greetings {
+  color: #1c1c1c;
 }
 /* 입력 폼 끝  */
 
 /* 리스트 시작  */
+
 .js__toDoList > li {
   padding: 10px 0;
-  color: #333333;
+  color: #1c1c1c;
   font-weight: bold;
   width: 250px;
   display: flex;
+  align-items: center;
   justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 5px;
 }
 .js__toDoList {
   display: flex;
@@ -99,8 +120,21 @@ body {
   position: absolute;
   top: 50px;
   right: 50px;
-  color: #f5f4f4;
+  color: #1c1c1c;
   font-size: 2rem;
   font-weight: bold;
 }
+.inputing {
+  width: 225px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
 /* 이미지 애니메이션 끝 */
+
+.greetings {
+}
+.js__toDoForm {
+  margin-top: 50px;
+}
