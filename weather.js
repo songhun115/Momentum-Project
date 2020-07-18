@@ -3,6 +3,10 @@ const coords = "coords";
 const weather = document.querySelector(".js__weather");
 
 function getWeather(lat, lon) {
+  var Dday = new Date();
+
+  var week = ["일", "월", "화", "수", "목", "금", "토"];
+
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API__KEY}&units=metric`
   )
@@ -12,7 +16,8 @@ function getWeather(lat, lon) {
     .then(function (json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temperature} @ ${place}`;
+
+      weather.innerText = `${temperature}-${place}-${week[Dday.getDay()]}요일`;
     });
 }
 function saveCoords(coordsObj) {

@@ -3,6 +3,15 @@ const clockContainer = document.querySelector(".js-clock"),
 
 function getTime() {
   const date = new Date();
+
+  const day = date.getUTCDay();
+
+  var Dday = new Date();
+
+  var week = ["일", "월", "화", "수", "목", "금", "토"];
+
+  console.log("오늘 요일은 " + week[Dday.getDay()] + "요일 입니다");
+
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
