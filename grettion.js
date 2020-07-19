@@ -23,7 +23,18 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(showing_className);
   greeting.classList.add(showing_className);
-  greeting.innerText = `hello ${text}`;
+  const date = new Date();
+  const hours = date.getHours();
+  if (hours >= 6 && hours <= 12) {
+    greeting.innerText = `Good Moning ${text}`;
+  } else if (hours >= 12 && hours <= 18) {
+    greeting.innerText = `Good Afternoon ${text}`;
+  } else if (hours >= 18 && hours <= 24) {
+    greeting.innerText = `Good Evening ${text}`;
+  } else {
+    reeting.innerText = `Good At dawn ${text}`;
+  }
+
   greeting.color = "#fafafa";
 }
 

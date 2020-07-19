@@ -33,6 +33,7 @@ function paintToDo(text) {
   delBtn.style.borderColor = "transparent";
   delBtn.style.borderRadius = "4px";
   delBtn.style.fontSize = "1.1rem";
+  delBtn.style.cursor = "pointer";
   span.innerText = text;
 
   li.appendChild(delBtn);
