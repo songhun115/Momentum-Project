@@ -1,9 +1,14 @@
 const form = document.querySelector(".js-form"),
   input = form.querySelector("input"),
-  greeting = document.querySelector(".js__greetings");
+  greeting = document.querySelector(".js__greetings"),
+  icon = document.querySelector(".icon__box");
 
 const user_localStorage = "currentUser",
   showing_className = "showing";
+
+function deleteGreeting(event) {
+  localStorage.removeItem(user_localStorage);
+}
 
 function saveName(text) {
   localStorage.setItem(user_localStorage, text);
@@ -23,6 +28,8 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(showing_className);
   greeting.classList.add(showing_className);
+  icon.classList.add(showing_className);
+  icon.addEventListener("click", deleteGreeting);
   const date = new Date();
   const hours = date.getHours();
   if (hours >= 6 && hours <= 12) {

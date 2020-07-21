@@ -31,7 +31,8 @@ body {
 }
 
 .form,
-.greetings {
+.greetings,
+.icon__box {
   display: none;
 }
 
@@ -153,12 +154,23 @@ h2 {
   text-align: center;
 }
 .user__Form {
-  border: 1px solid blue;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 5px 10px;
   border-radius: 5px;
 }
 .delBtn {
   cursor: pointer;
-  background-color: blue;
+}
+.icon {
+  color: black;
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon__box > a > .icon {
+  margin-left: 10px;
+  cursor: pointer;
 }
